@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="400.0" stylesheets="@css/bootstrap3.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.sceneController">
+   <children>
+      <Button layoutX="277.0" layoutY="109.0" mnemonicParsing="false" onAction="#switchToScene_init" prefHeight="31.0" prefWidth="64.0" styleClass="warning" text="登出" />
+      <Button layoutX="55.0" layoutY="109.0" mnemonicParsing="false" onAction="#new_accpwd" styleClass="info" text="新增 +" />
+      <Text fx:id="username" layoutX="168.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密碼庫">
+         <font>
+            <Font name="Microsoft JhengHei Bold" size="20.0" />
+         </font></Text>
+      <ListView fx:id="accpwd_listview" layoutX="55.0" layoutY="184.0" prefHeight="356.0" prefWidth="290.0" />
+      <Button blendMode="EXCLUSION" cacheHint="SCALE_AND_ROTATE" layoutX="131.0" layoutY="109.0" mnemonicParsing="false" onAction="#Edit_scene" styleClass="primary" text="修改   " />
+      <Button layoutX="204.0" layoutY="109.0" mnemonicParsing="false" onAction="#delete" styleClass="danger" text="刪除 - " />
+   </children>
+</AnchorPane>

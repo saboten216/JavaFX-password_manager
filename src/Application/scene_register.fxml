@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" stylesheets="@css/bootstrap3.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.sceneController">
+   <children>
+      <Label layoutX="152.0" layoutY="148.0" prefHeight="30.0" prefWidth="88.0" text="註冊帳號">
+         <font>
+            <Font name="Microsoft JhengHei UI Bold" size="20.0" />
+         </font></Label>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToScene_init" text="&lt;&lt; 返回首頁" textFill="#fc0000" textOverrun="CLIP">
+         <font>
+            <Font name="Microsoft JhengHei UI Light" size="19.0" />
+         </font></Button>
+      <TextField fx:id="register_acc" layoutX="108.0" layoutY="199.0" prefHeight="32.0" prefWidth="176.0" promptText="帳號" />
+      <Button layoutX="107.0" layoutY="308.0" mnemonicParsing="false" onAction="#register" prefHeight="38.0" prefWidth="64.0" styleClass="primary" text="註冊" />
+      <Label fx:id="register_hint" layoutX="179.0" layoutY="308.0" prefHeight="30.0" prefWidth="165.0" />
+      <ListView fx:id="accpwd_listview" layoutX="5.0" layoutY="-257.0" prefHeight="200.0" prefWidth="200.0" />
+      <PasswordField fx:id="register_pwd" layoutX="108.0" layoutY="249.0" prefHeight="48.0" prefWidth="176.0" promptText="密碼" />
+   </children>
+</AnchorPane>

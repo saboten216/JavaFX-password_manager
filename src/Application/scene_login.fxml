@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" styleClass="action-btn" stylesheets="@css/bootstrap3.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.sceneController">
+   <children>
+      <Button layoutX="199.0" layoutY="227.0" mnemonicParsing="false" onAction="#switchToScene2" prefHeight="48.0" prefWidth="86.0" styleClass="primary" text="註冊" />
+      <Label layoutX="145.0" layoutY="42.0" prefHeight="31.0" prefWidth="86.0" text="密碼管理">
+         <font>
+            <Font name="Microsoft JhengHei Bold" size="20.0" />
+         </font></Label>
+      <TextField fx:id="account" layoutX="97.0" layoutY="104.0" prefHeight="42.0" prefWidth="193.0" promptText="帳號" text="" />
+      <Button layoutX="97.0" layoutY="227.0" mnemonicParsing="false" onAction="#switchToScene_login" prefWidth="86.0" styleClass="info" text="登入" />
+      <Label fx:id="login_hint" layoutX="97.0" layoutY="285.0" prefHeight="30.0" prefWidth="193.0" />
+      <ListView fx:id="accpwd_listview" layoutX="40.0" layoutY="333.0" prefHeight="200.0" prefWidth="200.0" visible="false" />
+      <PasswordField fx:id="pwd" layoutX="97.0" layoutY="161.0" prefHeight="48.0" prefWidth="193.0" promptText="密碼" text="" />
+   </children>
+</AnchorPane>

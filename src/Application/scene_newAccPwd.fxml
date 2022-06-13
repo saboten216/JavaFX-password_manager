@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="400.0" stylesheets="@css/bootstrap3.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.sceneController">
+   <children>
+      <Text layoutX="140.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="新增帳號密碼">
+         <font>
+            <Font name="Microsoft JhengHei Bold" size="20.0" />
+         </font></Text>
+      <TextField fx:id="new_acc" layoutX="114.0" layoutY="188.0" prefHeight="32.0" prefWidth="172.0" promptText="帳號" />
+      <Button layoutX="114.0" layoutY="346.0" mnemonicParsing="false" onAction="#newAccPwd_new" prefHeight="31.0" prefWidth="78.0" styleClass="info" text="新增" />
+      <TextField fx:id="new_net" layoutX="114.0" layoutY="298.0" prefHeight="48.0" prefWidth="172.0" promptText="網站名稱" />
+      <Label fx:id="newaccpwd_hint" layoutX="200.0" layoutY="346.0" prefHeight="27.0" prefWidth="141.0" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToScene_main" text="&lt;&lt; 返回主頁" />
+      <ListView fx:id="accpwd_listview" layoutX="-267.0" layoutY="345.0" prefHeight="200.0" prefWidth="200.0" />
+      <PasswordField fx:id="new_pwd" layoutX="114.0" layoutY="242.0" prefHeight="48.0" prefWidth="172.0" promptText="密碼" />
+   </children>
+</AnchorPane>
